@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontak dan formulir aspirasi mahasiswa HMJSI FIKOM UNASMAN.">
+    <title>Kontak & Aspirasi | HMJSI FIKOM UNASMAN</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-hmjsi.png" alt="Logo HMJSI FIKOM UNASMAN" width="100">
+        <h1>Kontak dan Aspirasi Mahasiswa</h1>
+        <p>HMJSI FIKOM UNASMAN</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil Organisasi</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="kontak.html" aria-current="page">Kontak & Aspirasi</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Informasi Kontak</h2>
+            <p><strong>Organisasi:</strong> HMJSI FIKOM UNASMAN</p>
+            <p><strong>Alamat:</strong> Universitas Al-Asyariah Mandar. Lengkapi dengan alamat kampus resmi.</p>
+            <p><strong>Email:</strong> Belum dicantumkan. Tambahkan alamat email resmi organisasi.</p>
+            <p><strong>Media sosial:</strong> Tambahkan tautan akun resmi HMJSI jika tersedia.</p>
+        </section>
+
+        <section>
+            <h2>Formulir Aspirasi Mahasiswa</h2>
+            <p>
+                Formulir ini merupakan contoh antarmuka HTML. Karena website ini bersifat statis
+                dan belum terhubung ke server, data yang diisi belum disimpan atau dikirim kepada
+                pengurus. Hubungkan formulir ke layanan/server setelah alamat tujuan resmi tersedia.
+            </p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Data Pengirim</legend>
+
+                    <p>
+                        <label for="nama">Nama lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="nim">NIM:</label><br>
+                        <input type="text" id="nim" name="nim" inputmode="numeric" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Alamat email:</label><br>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telepon">Nomor telepon:</label><br>
+                        <input type="tel" id="telepon" name="telepon" autocomplete="tel">
+                    </p>
+
+                    <p>
+                        <label for="angkatan">Tahun angkatan:</label><br>
+                        <input type="number" id="angkatan" name="angkatan" min="2000" max="2100">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Isi Aspirasi</legend>
+
+                    <p>
+                        <label for="kategori">Kategori aspirasi:</label><br>
+                        <select id="kategori" name="kategori" required>
+                            <option value="">-- Pilih kategori --</option>
+                            <option value="akademik">Akademik</option>
+                            <option value="organisasi">Organisasi</option>
+                            <option value="kegiatan">Kegiatan mahasiswa</option>
+                            <option value="fasilitas">Fasilitas kampus</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </p>
+
+                    <p>Jenis pesan:</p>
+                    <input type="radio" id="saran" name="jenis_pesan" value="saran" required>
+                    <label for="saran">Saran</label><br>
+                    <input type="radio" id="pertanyaan" name="jenis_pesan" value="pertanyaan">
+                    <label for="pertanyaan">Pertanyaan</label><br>
+                    <input type="radio" id="keluhan" name="jenis_pesan" value="keluhan">
+                    <label for="keluhan">Keluhan</label>
+
+                    <p>
+                        <label for="judul">Judul pesan:</label><br>
+                        <input type="text" id="judul" name="judul" maxlength="100" required>
+                    </p>
+
+                    <p>
+                        <label for="pesan">Isi aspirasi:</label><br>
+                        <textarea id="pesan" name="pesan" rows="7" cols="45" minlength="10" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="tanggal">Tanggal pengiriman:</label><br>
+                        <input type="date" id="tanggal" name="tanggal">
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju" required>
+                        <label for="persetujuan">Saya menyatakan informasi yang diberikan benar.</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Kirim Formulir</button>
+                    <button type="reset">Kosongkan Formulir</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Kembali ke Beranda</a> | <a href="profil.html">Profil Organisasi</a></p>
+        <p>&copy; 2026 HMJSI FIKOM UNASMAN.</p>
+    </footer>
+</body>
+</html>
